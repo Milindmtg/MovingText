@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/bg"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorwyt"
+                android:id="@+id/enter"
+                android:textSize="40dp"
+                android:text=".."
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/primary_dark_material_dark"
+                android:textSize="100dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/draggable_view"
+        android:text="Hello!"
+        android:singleLine="true"
+        android:textColor="@color/colorwyt"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:autoSizeMinTextSize="36sp"
+        android:ellipsize="marquee"
+        android:autoSizeTextType="uniform"/>
+
+</FrameLayout>
